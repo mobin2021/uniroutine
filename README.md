@@ -1,4 +1,4 @@
-# UniRoutine 📅
+# UniRoutine 📅 by MOBIN
 ### Campus-Wide Academic Schedule & Real-Time Notification Platform
 *An offline-first Progressive Web App (PWA) designed to eliminate campus scheduling confusion and provide real-time updates.*
 
