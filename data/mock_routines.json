@@ -1,0 +1,28 @@
+{
+  "departments": [
+    { "id": "cse", "name": "Computer Science & Engineering" },
+    { "id": "eee", "name": "Electrical & Electronic Engineering" },
+    { "id": "bba", "name": "Business Administration" }
+  ],
+  "semesters": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"],
+  "routines": {
+    "cse-1st": [
+      { "day": "Sunday", "time": "09:00 AM - 10:30 AM", "course": "CSE 101: Structured Programming", "room": "Lab 301", "faculty": "Prof. Ada Lovelace" },
+      { "day": "Sunday", "time": "11:00 AM - 12:30 PM", "course": "MATH 101: Calculus & Geometry", "room": "Room 402", "faculty": "Dr. Alan Turing" },
+      { "day": "Tuesday", "time": "10:00 AM - 01:00 PM", "course": "CSE 102: Programming Lab (C)", "room": "Software Lab 2", "faculty": "Prof. Ada Lovelace" }
+    ],
+    "cse-3rd": [
+      { "day": "Monday", "time": "09:30 AM - 11:00 AM", "course": "CSE 201: Data Structures & Algorithms", "room": "Room 501", "faculty": "Dr. Claude Shannon" },
+      { "day": "Wednesday", "time": "01:30 PM - 03:00 PM", "course": "CSE 203: Computer Architecture", "room": "Room 504", "faculty": "Dr. John von Neumann" }
+    ]
+  },
+  "faculty_directory": [
+    { "name": "Prof. Ada Lovelace", "dept": "CSE", "designation": "Associate Professor", "email": "ada.lovelace@demo-univ.edu", "office": "Room 412, Academic Building 1" },
+    { "name": "Dr. Alan Turing", "dept": "CSE", "designation": "Professor & Head", "email": "alan.turing@demo-univ.edu", "office": "Room 401, Academic Building 1" },
+    { "name": "Dr. Claude Shannon", "dept": "CSE", "designation": "Assistant Professor", "email": "shannon@demo-univ.edu", "office": "Room 415, Academic Building 1" }
+  ],
+  "notices": [
+    { "id": 1, "title": "Room Shift: CSE 101 Lab", "message": "Tomorrow's Structured Programming Lab will be held in Software Lab 4 instead of Lab 301 due to hardware maintenance.", "author": "CR - CSE 1st Year", "timestamp": "Today, 10:15 AM", "urgent": true },
+    { "id": 2, "title": "Quiz 2 Schedule Announcement", "message": "Data Structures Quiz 2 is scheduled for next Monday covering Trees and Hash Tables.", "author": "Dr. Claude Shannon", "timestamp": "Yesterday, 04:30 PM", "urgent": false }
+  ]
+}

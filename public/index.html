@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniRoutine - Campus Timetable & Notices</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#1a73e8">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="logo-group">
+      <h1>UniRoutine</h1>
+      <span class="badge-offline" id="offlineBadge">🟢 Online</span>
+    </div>
+    <button class="btn-install" id="installBtn">📲 Install App (PWA)</button>
+  </nav>
+
+  <main class="container">
+    <!-- Tab Navigation -->
+    <div class="tab-nav">
+      <button class="tab-btn active" id="tab-routines" onclick="showTab('routines')">📅 Class Routine</button>
+      <button class="tab-btn" id="tab-notices" onclick="showTab('notices')">📢 Live Notices & CR Portal</button>
+      <button class="tab-btn" id="tab-faculty" onclick="showTab('faculty')">👨‍🏫 Faculty Directory</button>
+    </div>
+
+    <!-- TAB 1: ROUTINES VIEW -->
+    <div id="routines-view" class="tab-content">
+      <div class="filter-bar">
+        <select id="deptSelect">
+          <option value="cse">Department: Computer Science & Engineering (CSE)</option>
+          <option value="eee">Department: Electrical & Electronic Engineering (EEE)</option>
+          <option value="bba">Department: Business Administration (BBA)</option>
+        </select>
+        <select id="semesterSelect">
+          <option value="1st">Semester: 1st Semester</option>
+          <option value="3rd">Semester: 3rd Semester</option>
+          <option value="5th">Semester: 5th Semester</option>
+        </select>
+      </div>
+
+      <div class="card-grid" id="routineContainer">
+        <!-- Loaded dynamically by app.js -->
+      </div>
+    </div>
+
+    <!-- TAB 2: NOTICES & CR BROADCAST VIEW -->
+    <div id="notices-view" class="tab-content" style="display: none;">
+      <!-- CR / Teacher Notice Broadcast Form -->
+      <div class="notice-form-card">
+        <h3 style="margin-bottom: 10px; font-size: 1.05rem;">📝 Post Class Update / Emergency Notice</h3>
+        <form id="noticeForm">
+          <input type="text" id="noticeTitle" placeholder="Notice Title (e.g., Room Shift / Class Cancelled)" required>
+          <textarea id="noticeMsg" rows="3" placeholder="Notice Details..." required></textarea>
+          <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 12px;">
+            <input type="text" id="noticeAuthor" placeholder="Your Name / Role (e.g. CR 1st Year)" style="margin-bottom:0;" required>
+            <label style="font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 4px; white-space: nowrap;">
+              <input type="checkbox" id="noticeUrgent" style="margin: 0; width: auto;"> Urgent Announcement
+            </label>
+          </div>
+          <button type="submit" class="btn-submit">Broadcast to Students</button>
+        </form>
+      </div>
+
+      <div class="card-grid" id="noticeContainer">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+
+    <!-- TAB 3: FACULTY DIRECTORY VIEW -->
+    <div id="faculty-view" class="tab-content" style="display: none;">
+      <div class="card-grid" id="facultyContainer">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
