@@ -1,4 +1,4 @@
-# UniRoutine 📅 by MOBIN
+# UniRoutine 📅
 ### Campus-Wide Academic Schedule & Real-Time Notification Platform
 *An offline-first Progressive Web App (PWA) designed to eliminate campus scheduling confusion and provide real-time updates.*
 
@@ -18,6 +18,13 @@ University timetables are often fragmented across scattered PDF files, WhatsApp 
 2. **Faculty Directory**: Gives students instant access to faculty office hours, department designations, and contact emails.
 3. **Role-Based Real-Time Notices**: Enables authorized Class Representatives (CRs) and faculty members to post instantaneous schedule updates and room changes.
 4. **Offline-First PWA Architecture**: Rather than requiring students to pay or download large app-store packages, UniRoutine runs as an installable Progressive Web App (PWA) with client-side caching, functioning 100% offline with zero latency even during campus Wi-Fi outages.
+
+---
+
+## 📱 Application Interface & Live Demo
+
+![UniRoutine PWA Interface](assets/uniroutine_demo.jpg)
+*Production UI: PWA installation prompt, real-time schedule filtering, offline caching indicator, and broadcasted CR notice cards.*
 
 ---
 
@@ -66,7 +73,7 @@ graph TD
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/mobin2021/uniroutine.git
+git clone https://github.com/yourhandle/uniroutine.git
 cd uniroutine
 ```
 
