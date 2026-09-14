@@ -25,6 +25,7 @@ University timetables are often fragmented across scattered PDF files, WhatsApp 
 
 ![UniRoutine PWA Interface](assets/uniroutine_demo.jpg)
 *Production UI: PWA installation prompt, real-time schedule filtering, offline caching indicator, and broadcasted CR notice cards.*
+** picture is for ref only. All above info are demo. ALL REAL INFO HIDDEN DUE TO SEC REASON **
 
 ---
 
