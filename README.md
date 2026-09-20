@@ -100,3 +100,9 @@ Open `http://localhost:3000` in your browser.
 
 ## 📄 License
 Distributed under the MIT License. See `LICENSE` for details.
+
+## 🔒 Public Repository Scope
+
+This repository is a sanitized public demonstration of the UniRoutine project. The production implementation, university data, deployment configuration, authentication details, and security controls are intentionally kept private to protect students, faculty, and university infrastructure. Screenshots and example data are illustrative rather than live operational data.
+
+The public version documents the product architecture and engineering direction without exposing information that could help an attacker target the real system.
